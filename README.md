@@ -55,7 +55,7 @@ results/,GALNS_motif_positions.csv,Positions and sequences of N-X-S/T motifs
 figures/,GALNS_amino_acid_composition.png,Figure 1
 figures/,GALNS_potential_N_glycosylation.png,Figure 2
 
-## Results
+### Results
 Amino acid composition
 GALNS is 522 amino acids long. Leucine is the most common residue.
 
