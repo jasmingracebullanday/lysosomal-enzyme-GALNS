@@ -7,8 +7,8 @@
 **Accession:** [NP_000503.1](https://www.ncbi.nlm.nih.gov/protein/NP_000503.1)
 
 **Organism:** *Homo sapiens*
-  
-  **Function:** GALNS is a lysosomal sulfatase that removes the 6-sulfate group from N-acetylgalactosamine residues in chondroitin-6-sulfate and from galactose residues in keratan sulfate, allowing further degradation of these glycosaminoglycans.
+
+**Function:** GALNS is a lysosomal sulfatase that removes the 6-sulfate group from N-acetylgalactosamine residues in chondroitin-6-sulfate and from galactose residues in keratan sulfate, allowing further degradation of these glycosaminoglycans.
 
 ## Workflow
 
@@ -20,7 +20,7 @@ I created the public repository `lysosomal-enzyme-GALNS` on GitHub and added `ly
 
 ### Step 3: Edit the script
 Only these two lines were changed:
-  ```r
+```r
 gene <- "GALNS"
 accession <- "NP_000503.1"
 
@@ -32,16 +32,16 @@ The script downloads the FASTA record directly from NCBI with rentrez and saves 
 
 ### Step 6: Console output
 Analysis complete for GALNS (NP_000503.1)
-gene accession length_amino_acids potential_N_glycosylation_motifs
+  gene accession length_amino_acids potential_N_glycosylation_motifs
 1 GALNS NP_000503.1               522                                2
 
 Five most common amino acids:
-  amino_acid count percent
-L    59   11.30
-A    46    8.81
-G    46    8.81
-P    41    7.85
-T    28    5.36
+ amino_acid count percent
+          L    59   11.30
+          A    46    8.81
+          G    46    8.81
+          P    41    7.85
+          T    28    5.36
 
 Files saved in data/, results/, and figures/.
 
@@ -61,27 +61,27 @@ GALNS is 522 amino acids long. Leucine is the most common residue.
 Figure 1. Count of each amino acid in GALNS (NP_000503.1).
 ### Potential N-glycosylation motifs
 The script searched for N-X-S/T, where X is not proline, and found 2 motifs:
-  Position,Motif
+Position,Motif
 204,NLT
 423,NVS
 Figure 2. Positions of the 2 potential N-glycosylation motifs along the 522-aa protein.
 
 Answers to the Questions
 1. What does your enzyme normally break down inside lysosomes?
-  
-  Keratan sulfate and chondroitin-6-sulfate (glycosaminoglycans). GALNS removes the 6-sulfate group from these molecules so that other lysosomal enzymes can continue their degradation.
+
+Keratan sulfate and chondroitin-6-sulfate (glycosaminoglycans). GALNS removes the 6-sulfate group from these molecules so that other lysosomal enzymes can continue their degradation.
 2. What is the total length of your protein, and which amino acids are most common?
-  
-  522 amino acids. The most common are leucine (59, 11.30%), alanine (46, 8.81%), glycine (46, 8.81%), proline (41, 7.85%), and threonine (28, 5.36%).
+
+522 amino acids. The most common are leucine (59, 11.30%), alanine (46, 8.81%), glycine (46, 8.81%), proline (41, 7.85%), and threonine (28, 5.36%).
 3. How many potential N-glycosylation motifs did you find? Where are they located?
-  
-  Two, at positions 204 (NLT) and 423 (NVS).
+
+Two, at positions 204 (NLT) and 423 (NVS).
 4. Why can glycosylation matter for lysosomal proteins? Does finding a motif prove the protein is glycosylated?
-  
-  N-glycans on lysosomal enzymes can be modified with a mannose-6-phosphate (M6P) tag. M6P receptors recognize this tag and sort the enzyme to the lysosome. Glycosylation also helps folding and stability. No. N-X-S/T only predicts a possible site. It does not show that a glycan is attached, that the site is used, or that an M6P tag is present.
+
+N-glycans on lysosomal enzymes can be modified with a mannose-6-phosphate (M6P) tag. M6P receptors recognize this tag and sort the enzyme to the lysosome. Glycosylation also helps folding and stability. No. N-X-S/T only predicts a possible site. It does not show that a glycan is attached, that the site is used, or that an M6P tag is present.
 5. What could happen in the cell if your enzyme did not work properly?
-  
-  Keratan sulfate and chondroitin-6-sulfate would accumulate in lysosomes. In humans, GALNS deficiency causes mucopolysaccharidosis type IVA (MPS IVA, Morquio A syndrome), a lysosomal storage disease that mainly affects the skeleton and leads to severe skeletal dysplasia.
+
+Keratan sulfate and chondroitin-6-sulfate would accumulate in lysosomes. In humans, GALNS deficiency causes mucopolysaccharidosis type IVA (MPS IVA, Morquio A syndrome), a lysosomal storage disease that mainly affects the skeleton and leads to severe skeletal dysplasia.
 
 lysosomal_enzyme_analysis.R
 data/      GALNS.fasta
